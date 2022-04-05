@@ -1,0 +1,28 @@
+{
+  "name": "parkinglot",
+  "version": "1.0.0",
+  "description": "Parking Lot Design",
+  "main": "app.js",
+  "scripts": {
+    "start": " nodemon node ./src/app.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulNautiyal07/parkingLot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahulNautiyal07/parkingLot/issues"
+  },
+  "homepage": "https://github.com/RahulNautiyal07/parkingLot#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
