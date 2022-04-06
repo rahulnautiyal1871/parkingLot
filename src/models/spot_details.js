@@ -11,9 +11,15 @@ var parkingSpotSchema = new mongoose.Schema({
     default: "car",
     required: [true, "No vehicle provided"],
   },
-  isReserve: {
-    type: Boolean,
-    default: false,
+  totalRemaining: {
+    type: Number,
+  },
+  pricePerHour: {
+    type: Number,
+  },
+  currency: {
+    type: String,
+    default: "USD",
   },
   createdAt: {
     type: Date,

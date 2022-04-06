@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "58c60782-b7ca-4517-a645-b25825f86124",
+		"name": "parkingLot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"zipCode\": \"122221\",\r\n    \"buildingName\" : \"Neel Nagraj\",\r\n    \"totalSpots\" : 2323\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/parking-lot/find/624d7d48ae8cda86ee08c949",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking-lot",
+						"find",
+						"624d7d48ae8cda86ee08c949"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create parking lot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"zipCode\": \"122221\",\r\n    \"buildingName\" : \"Neel Kamal\",\r\n    \"totalSpots\" : 2323\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/parking-lot/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking-lot",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete parking lot",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"zipCode\": \"122221\",\r\n    \"buildingName\" : \"Neel Kamal\",\r\n    \"totalSpots\" : 2323\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/parking-lot/delete/624d7bd6911e073ae93d2e65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking-lot",
+						"delete",
+						"624d7bd6911e073ae93d2e65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all parking lots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/parking-lot/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking-lot",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update parking lot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/parking-lot/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking-lot",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch one by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/parking-lot/find/624d7d48ae8cda86ee08c949",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"parking-lot",
+						"find",
+						"624d7d48ae8cda86ee08c949"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
